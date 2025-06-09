@@ -77,10 +77,33 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-  </style>
+  .top-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px; 
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 1000;
+}
+.top-button:hover {
+  background-color: #a200ff;
+  transform: scale(1.1);
+}
+</style>
 </head>
 <body>
-  <div class="container">
+  <a href="https://skeleadvyy.github.io/mybio/" class="top-button">></a>
+<div class="container">
     <h1>🔐 Password Generator</h1>
     <div>
       <label>Length:
